@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavithra Datta - Online Dance Classes</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#161313',
+            coffee: '#6f3e24',
+            cocoa: '#8b5a3c',
+            paper: '#f4eee7',
+            sand: '#e8ddd1',
+            line: '#cdbdaf'
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['DM Sans', 'Arial', 'sans-serif'],
+            script: ['"Great Vibes"', 'cursive', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+    /* Custom Swiper Controls Theme */
+    .swiper-button-next, .swiper-button-prev {
+      color: #6f3e24 !important;
+      background-color: rgba(244, 238, 231, 0.9);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid #cdbdaf;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #6f3e24 !important;
+      width: 24px !important;
+      border-radius: 4px !important;
+    }
+    .swiper-pagination-bullet {
+      background-color: #8b5a3c;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased scroll-smooth scroll-pt-20">
+
+  <header class="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-line">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="font-script text-3xl md:text-4xl text-coffee font-bold">Pavithra Datta</a>
+      <nav class="hidden md:flex gap-8 text-sm font-semibold tracking-wider text-ink uppercase">
+        <a href="#about" class="hover:text-coffee transition-colors">About</a>
+        <a href="#styles" class="hover:text-coffee transition-colors">Dance Styles</a>
+        <a href="#gallery" class="hover:text-coffee transition-colors">Gallery</a>
+        <a href="#details" class="hover:text-coffee transition-colors">Class Details</a>
+        <a href="#contact" class="hover:text-coffee transition-colors">Contact</a>
+      </nav>
+      <a href="#contact" class="bg-coffee text-paper px-5 py-2 text-sm font-semibold tracking-wide rounded-full hover:bg-cocoa transition-colors">Join Class</a>
+    </div>
+  </header>
+
+  <div class="bg-coffee text-paper text-center py-2 px-4 text-xs md:text-sm font-medium tracking-widest uppercase">
+    Join from anywhere in the USA • UK • Germany • France
+  </div>
+
+  <section class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div class="space-y-6">
+      <div class="inline-block border-y border-coffee py-1 text-xs md:text-sm font-semibold tracking-widest text-coffee uppercase">
+        Learn • Grow • Perform • Shine
+      </div>
+      <h1 class="mt-4 font-display text-5xl tracking-[-.035em] md:text-6xl">
+        Online Dance <br><span class="text-coffee">Classes</span>
+      </h1>
+      <p class="text-sm md:text-base font-semibold tracking-widest text-cocoa uppercase">
+        Online Group & Private Classes
+      </p>
+      <blockquote class="font-script text-2xl md:text-3xl text-coffee border-l-2 border-coffee pl-4 my-4">
+        "Dance is more than movement, it's confidence in action. ❤️"
+      </blockquote>
+      <div class="bg-sand/60 border border-line rounded-xl p-5 flex items-start gap-4">
+        <div class="text-coffee text-2xl"><i class="fa-solid fa-crown"></i></div>
+        <div>
+          <h3 class="font-display font-bold text-lg text-ink uppercase">Train with a Celebrity Dancer & Performer</h3>
+          <p class="text-sm text-ink/80 mt-1">With years of experience, countless stage shows, and reality show appearances.</p>
+        </div>
+      </div>
+      <div class="pt-2">
+        <a href="#contact" class="inline-block bg-coffee text-paper font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-cocoa transition-colors uppercase tracking-wider text-sm">
+          Enroll Now
+        </a>
+      </div>
+    </div>
+
+    <div class="relative flex justify-center">
+      <div class="absolute -inset-2 bg-sand rounded-3xl transform rotate-2 border border-line"></div>
+      <img src="images/bgremoved.png" alt="Pavithra Datta - Celebrity Dancer" class="relative rounded-2xl shadow-xl w-full max-w-md object-cover border-4 border-paper">
+    </div>
+  </section>
+
+  <section id="gallery" class="py-16 bg-sand/40 border-y border-line">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest text-coffee">Visual Highlights</span>
+        <h2 class="mt-4 font-display text-5xl tracking-[-.035em] md:text-6xl">Class & Performance Showcase</h2>
+        <div class="w-16 h-0.5 bg-coffee mx-auto mt-3"></div>
+      </div>
+
+      <div class="swiper mySwiper p-4">
+        <div class="swiper-wrapper">
+         <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery1.PNG" alt="Gallery Showcase 1" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery2.jpeg" alt="Gallery Showcase 2" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery3.jpeg" alt="Gallery Showcase 3" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery4.jpeg" alt="Gallery Showcase 4" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery5.jpeg" alt="Gallery Showcase 5" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery6.jpeg" alt="Gallery Showcase 6" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery7.jpeg" alt="Gallery Showcase 7" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery8.jpeg" alt="Gallery Showcase 8" class="w-full h-full object-cover">
+          </div>
+          <div class="swiper-slide rounded-xl overflow-hidden border border-line shadow-md aspect-[4/5] bg-paper">
+            <img src="images/pavithra_gallery9.jpg" alt="Gallery Showcase 9" class="w-full h-full object-cover">
+          </div>
+        
+        </div>
+        
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination !-bottom-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="text-xs font-semibold uppercase tracking-widest text-coffee">Portfolio & Experience</span>
+        <h2 class="mt-4 font-display text-5xl tracking-[-.035em] md:text-6xl">About Pavithra Datta</h2>
+        <div class="w-16 h-0.5 bg-coffee mx-auto mt-3"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-paper p-6 rounded-xl border border-line flex flex-col items-center text-center shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-coffee text-xl mb-4">
+            <i class="fa-solid fa-person"></i>
+          </div>
+          <h3 class="font-bold text-base text-ink mb-2 ">15+ Years Experience</h3>
+          <p class="text-xs text-ink/75">10 Years of professional dance teaching experience across all ages.</p>
+        </div>
+        <div class="bg-paper p-6 rounded-xl border border-line flex flex-col items-center text-center shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-coffee text-xl mb-4">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h3 class="font-bold text-base text-ink mb-2 ">6+ Dance Reality Shows</h3>
+          <p class="text-xs text-ink/75">Featured in prominent shows including Dhee Jodi & Dance Jodi Dance.</p>
+        </div>
+        <div class="bg-paper p-6 rounded-xl border border-line flex flex-col items-center text-center shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-coffee text-xl mb-4">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3 class="font-bold text-base text-ink mb-2 ">Trained 100+ Students</h3>
+          <p class="text-xs text-ink/75">Inspiring confidence and shaping performers globally.</p>
+        </div>
+        <div class="bg-paper p-6 rounded-xl border border-line flex flex-col items-center text-center shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-coffee text-xl mb-4">
+            <i class="fa-solid fa-clapperboard"></i>
+          </div>
+          <h3 class="font-bold text-base text-ink mb-2 ">Assistant Choreographer</h3>
+          <p class="text-xs text-ink/75">10+ Shows, Movies & numerous prestigious award shows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="styles" class="bg-sand/30 py-16 border-t border-line">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <h2 class="mt-4 font-display text-5xl tracking-[-.035em] md:text-6xl">
+            Dance Styles
+          </h2>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-paper p-4 rounded-xl border border-line text-center">
+              <i class="fa-solid fa-compact-disc text-coffee text-2xl mb-2"></i>
+              <h4 class="font-bold text-ink">Cinematic</h4>
+            </div>
+            <div class="bg-paper p-4 rounded-xl border border-line text-center">
+              <i class="fa-solid fa-drum text-coffee text-2xl mb-2"></i>
+              <h4 class="font-bold text-ink">Folk</h4>
+            </div>
+            <div class="bg-paper p-4 rounded-xl border border-line text-center">
+              <i class="fa-solid fa-music text-coffee text-2xl mb-2"></i>
+              <h4 class="font-bold text-ink">Western</h4>
+            </div>
+            <div class="bg-paper p-4 rounded-xl border border-line text-center">
+              <i class="fa-solid fa-bolt text-coffee text-2xl mb-2"></i>
+              <h4 class="font-bold text-ink">Freestyle</h4>
+            </div>
+          </div>
+        </div>
+
+        <div id="details" class="space-y-6">
+          <h2 class="font-display text-2xl md:text-3xl font-bold uppercase text-ink border-b border-line pb-3">
+            Class Structure
+          </h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 bg-paper p-4 rounded-xl border border-line">
+              <i class="fa-regular fa-clock text-coffee text-2xl mt-1"></i>
+              <div>
+                <h4 class="font-bold text-ink">1 Hour • 2 Days A Week</h4>
+                <p class="text-xs text-ink/75">Perfect balance of learning, practice, and flexibility.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 bg-paper p-4 rounded-xl border border-line">
+              <i class="fa-solid fa-users text-coffee text-2xl mt-1"></i>
+              <div>
+                <h4 class="font-bold text-ink">Kids, Adults & Special Ladies Batches</h4>
+                <p class="text-xs text-ink/75">Tailored learning environments for every age and skill level.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 bg-paper p-4 rounded-xl border border-line">
+              <i class="fa-solid fa-bullseye text-coffee text-2xl mt-1"></i>
+              <div>
+                <h4 class="font-bold text-ink">Focus Areas</h4>
+                <p class="text-xs text-ink/75">Dance Skills • Confidence • Stage Performance • Fitness</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Reels -->
+    <section id="reels" class="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+      <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div>
+          <p class="text-[10px] font-bold uppercase tracking-[.32em] text-coffee">03 · Instagram reels</p>
+          <h2 class="mt-4 font-display text-5xl tracking-[-.035em] md:text-6xl">See the movement.</h2>
+        </div>
+        <a href="https://www.instagram.com/pavithra_datta/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-3 self-start rounded-full border border-ink/30 px-6 py-3 text-[10px] font-bold uppercase tracking-[.22em] transition hover:border-coffee hover:text-coffee md:self-auto">
+          Follow @pavithra_datta
+          <span>↗</span>
+        </a>
+      </div>
+
+      <!-- Replace the six Instagram URLs below with direct /reel/... links when you have them. -->
+      <div class="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3">
+        <a class="reel-card reveal group relative aspect-[4/5] overflow-hidden rounded-2xl bg-ink" href="https://www.instagram.com/pavithra__datta/" target="_blank" rel="noreferrer">
+          <img src="images/pavithra_gallery2.jpeg" alt="Dance reel 01" class="h-full w-full object-cover object-[52%_32%] opacity-80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/10"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+            <p class="text-[9px] uppercase tracking-[.25em] text-white/65">Reel 01</p>
+            <p class="mt-1 font-display text-xl">Class energy</p>
+          </div>
+          <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-white/40 bg-white/10 backdrop-blur">
+            ▶
+          </span>
+        </a>
+
+        <a class="reel-card reveal group relative aspect-[4/5] overflow-hidden rounded-2xl bg-coffee" href="https://www.instagram.com/pavithra__datta/" target="_blank" rel="noreferrer">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,.2),transparent_35%),linear-gradient(145deg,#6f3e24,#161313)]"></div>
+          <img src="images/pavithra_gallery9.jpg" alt="Dance reel 01" class="h-full w-full object-cover object-[52%_32%] opacity-80" />
+          <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+            <p class="text-[9px] uppercase tracking-[.25em] text-white/60">Reel 02</p>
+            <p class="mt-1 font-display text-xl">Learn the step</p>
+          </div>
+          <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-white/40 bg-white/10">▶</span>
+        </a>
+
+        <a class="reel-card reveal group relative aspect-[4/5] overflow-hidden rounded-2xl bg-sand" href="https://www.instagram.com/pavithra__datta/" target="_blank" rel="noreferrer">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(111,62,36,.2),transparent_35%),linear-gradient(160deg,#f4eee7,#cdbdaf)]"></div>
+          <img src="images/pavithra_gallery8.jpeg" alt="Dance reel 03" class="h-full w-full object-cover object-[40%_60%] opacity-80" />
+          <div class="absolute inset-x-0 bottom-0 p-5">
+            <p class="text-[9px] uppercase tracking-[.25em] text-coffee">Reel 03</p>
+            <p class="mt-1 font-display text-xl">Behind the class</p>
+          </div>
+          <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-ink/30 bg-paper/40">▶</span>
+        </a>
+
+        <a class="reel-card reveal group relative aspect-[4/5] overflow-hidden rounded-2xl bg-ink" href="https://www.instagram.com/pavithra__datta/" target="_blank" rel="noreferrer">
+          <img src="images/pavithra_gallery3.jpeg" alt="Dance reel 04" class="h-full w-full object-cover object-[45%_55%] opacity-75" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+            <p class="text-[9px] uppercase tracking-[.25em] text-white/65">Reel 04</p>
+            <p class="mt-1 font-display text-xl">Personal session</p>
+          </div>
+          <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-white/40 bg-white/10">▶</span>
+        </a>
+
+        <a class="reel-card reveal group relative aspect-[4/5] overflow-hidden rounded-2xl bg-paper" href="https://www.instagram.com/pavithra__datta/" target="_blank" rel="noreferrer">
+            <div class="absolute inset-0 bg-[linear-gradient(135deg,#e8ddd1,#f4eee7_55%,#8b5a3c)]"></div>
+            <img src="images/pavithra_gallery4.jpeg" alt="Dance reel 05" class="h-full w-full object-cover object-[50%_50%] opacity-80" />
+          <div class="absolute inset-x-0 bottom-0 p-5">
+            <p class="text-[9px] uppercase tracking-[.25em] text-coffee">Reel 05</p>
+            <p class="mt-1 font-display text-xl">Practice diary</p>
+          </div>
+          <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-ink/30 bg-white/30">▶</span>
+        </a>
+
+        <a class="reel-card reveal group relative aspect-[4/5] overflow-hidden rounded-2xl bg-coffee" href="https://www.instagram.com/pavithra__datta/" target="_blank" rel="noreferrer">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_35%_35%,rgba(255,255,255,.16),transparent_30%),linear-gradient(135deg,#8b5a3c,#161313)]"></div>
+            <img src="images/pavithra_gallery5.jpeg" alt="Dance reel 06" class="h-full w-full object-cover object-[45%_55%] opacity-80" />
+          <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+            <p class="text-[9px] uppercase tracking-[.25em] text-white/60">Reel 06</p>
+            <p class="mt-1 font-display text-xl">Dance with us</p>
+          </div>
+          <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-white/40 bg-white/10">▶</span>
+        </a>
+      </div>
+
+      <p class="mt-5 text-center text-[9px] uppercase tracking-[.18em] text-ink/40">
+        Tip: replace each reel card link with your direct Instagram /reel/ URL for a live portfolio.
+      </p>
+    </section>
+
+   <!-- Signup + Contact -->
+    <section id="contact" class="border-y border-line/70 bg-ink text-paper">
+      <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-28">
+        <div class="grid gap-14 lg:grid-cols-[.85fr_1.15fr] lg:items-start">
+
+          <div class="reveal lg:sticky lg:top-28">
+            <p class="text-[10px] font-bold uppercase tracking-[.32em] text-[#c79a7c]">04 · Join a class</p>
+            <h2 class="mt-5 max-w-xl font-display text-5xl leading-[.95] tracking-[-.035em] md:text-7xl">
+              Let's get you dancing.
+            </h2>
+            <p class="mt-6 max-w-md text-sm leading-7 text-paper/60">
+              Fill in the form and Pavithra will get back to you with class details, timings and the best option for you.
+            </p>
+
+            <div class="mt-10 space-y-5 border-t border-white/15 pt-7">
+              <div>
+                <p class="text-[9px] font-bold uppercase tracking-[.25em] text-[#c79a7c]">Email</p>
+                <a href="mailto:pavithradatta02@gmail.com" class="mt-1 inline-block text-sm hover:text-[#c79a7c]">pavithradatta02@gmail.com</a>
+              </div>
+              <div>
+                <p class="text-[9px] font-bold uppercase tracking-[.25em] text-[#c79a7c]">Instagram</p>
+                <a href="https://www.instagram.com/pavithra_datta/" target="_blank" rel="noreferrer" class="mt-1 inline-block text-sm hover:text-[#c79a7c]">@pavithra_datta ↗</a>
+              </div>
+              <div>
+                <p class="text-[9px] font-bold uppercase tracking-[.25em] text-[#c79a7c]">Classes</p>
+                <p class="mt-1 text-sm text-paper/65">Kids · Adults · Ladies · Personal Sessions</p>
+              </div>
+            </div>
+          </div>
+
+          <form id="signupForm" class="reveal rounded-[2rem] border border-white/15 bg-white/[.06] p-6 shadow-2xl shadow-black/10 backdrop-blur sm:p-8">
+            <div class="mb-8 flex items-center justify-between gap-4 border-b border-white/15 pb-6">
+              <div>
+                <p class="text-[9px] font-bold uppercase tracking-[.25em] text-[#c79a7c]">Registration form</p>
+                <h3 class="mt-2 font-display text-3xl">Sign up for a class</h3>
+              </div>
+              <span class="hidden rounded-full border border-white/15 px-3 py-2 text-[8px] font-bold uppercase tracking-[.18em] text-paper/50 sm:block">1 hour online</span>
+            </div>
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <label class="block">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Full name *</span>
+                <input required name="name" type="text" autocomplete="name" placeholder="Your name"
+                  class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none placeholder:text-paper/30 focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]" />
+              </label>
+
+              <label class="block">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Email *</span>
+                <input required name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                  class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none placeholder:text-paper/30 focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]" />
+              </label>
+
+              <label class="block">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Phone / WhatsApp</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="+1 234 567 890"
+                  class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none placeholder:text-paper/30 focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]" />
+              </label>
+
+              <label class="block">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Country</span>
+                <input name="country" type="text" autocomplete="country-name" placeholder="USA / UK / Germany / France"
+                  class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none placeholder:text-paper/30 focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]" />
+              </label>
+
+              <label class="block">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Class *</span>
+                <select required name="class"
+                  class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]">
+                  <option value="" selected disabled>Select a class</option>
+                  <option value="Kids">Kids (4–12 years)</option>
+                  <option value="Adults">Adults (13+ years)</option>
+                  <option value="Ladies">Ladies (all ages)</option>
+                  <option value="Personal Session">Personal Session / 1-on-1</option>
+                </select>
+              </label>
+
+              <label class="block">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Experience</span>
+                <select name="experience"
+                  class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Some experience">Some experience</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Advanced">Advanced</option>
+                </select>
+              </label>
+
+              <label class="block sm:col-span-2">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Preferred weekend timing</span>
+                <select name="timing"
+                  class="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]">
+                  <option value="Flexible">I'm flexible</option>
+                  <option value="Saturday morning">Saturday morning</option>
+                  <option value="Saturday afternoon">Saturday afternoon</option>
+                  <option value="Saturday evening">Saturday evening</option>
+                  <option value="Sunday morning">Sunday morning</option>
+                  <option value="Sunday afternoon">Sunday afternoon</option>
+                  <option value="Sunday evening">Sunday evening</option>
+                </select>
+              </label>
+
+              <label class="block sm:col-span-2">
+                <span class="mb-2 block text-[9px] font-bold uppercase tracking-[.2em] text-paper/55">Anything you'd like to share?</span>
+                <textarea name="message" rows="4" placeholder="Tell us about your goals or what you'd like to learn..."
+                  class="w-full resize-none rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm outline-none placeholder:text-paper/30 focus:border-[#c79a7c] focus:ring-1 focus:ring-[#c79a7c]"></textarea>
+              </label>
+            </div>
+
+            <div class="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <p class="max-w-xs text-[10px] leading-5 text-paper/40">By submitting, you'll open your email app with the registration details ready to send.</p>
+              <button type="submit" class="rounded-full bg-paper px-7 py-3.5 text-[10px] font-bold uppercase tracking-[.22em] text-ink transition hover:bg-[#d8c2b1]">
+                Send registration
+              </button>
+            </div>
+
+            <p id="formMessage" class="mt-5 hidden rounded-xl border border-[#c79a7c]/40 bg-[#c79a7c]/10 p-4 text-xs leading-5 text-paper/80"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <footer class="bg-ink text-paper py-6 border-t border-line text-center text-xs text-paper/60">
+    <p>© 2026 Pavithra Datta Online Dance Classes. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+    });
+  </script>
+</body>
+</html>
