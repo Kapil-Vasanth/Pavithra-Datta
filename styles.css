@@ -1,0 +1,498 @@
+ html {
+  scroll-behavior: smooth;
+}
+    /* Custom Swiper Controls Theme */
+    .swiper-button-next, .swiper-button-prev {
+      color: #6f3e24 !important;
+      background-color: rgba(244, 238, 231, 0.9);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid #cdbdaf;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #6f3e24 !important;
+      width: 24px !important;
+      border-radius: 4px !important;
+    }
+    .swiper-pagination-bullet {
+      background-color: #8b5a3c;
+      transition: all 0.3s ease;
+    }
+
+    /* =========================================
+   INTERNATIONAL SCHEDULE
+========================================= */
+
+.international-schedule {
+  position: relative;
+  overflow: hidden;
+  background: #f4eee7;
+  color: #171311;
+  padding: 110px 20px;
+}
+
+.schedule-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/* ---------- Heading ---------- */
+
+.schedule-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.schedule-eyebrow {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .45em;
+  text-transform: uppercase;
+  color: #6f3e24;
+}
+
+.schedule-heading h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(48px, 7vw, 100px);
+  line-height: .85;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+}
+
+.schedule-heading h2 span {
+  display: block;
+  color: #6f3e24;
+}
+
+.schedule-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 28px auto 22px;
+  max-width: 500px;
+}
+
+.schedule-divider span {
+  height: 1px;
+  flex: 1;
+  background: #8b5a3c;
+  opacity: .5;
+}
+
+.schedule-divider b {
+  color: #6f3e24;
+  font-size: 18px;
+}
+
+.weekend-badge {
+  display: inline-block;
+  padding: 12px 38px;
+  border-radius: 50px;
+  background: #6f3e24;
+  color: #fffaf5;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 22px;
+  letter-spacing: .1em;
+}
+
+.schedule-values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .35em;
+}
+
+.schedule-values b {
+  color: #8b5a3c;
+}
+
+.schedule-quote {
+  margin: 25px auto 0;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 25px;
+  line-height: 1.4;
+  font-style: italic;
+  color: #6f3e24;
+}
+
+
+/* ---------- Main Cards ---------- */
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.schedule-card {
+  overflow: hidden;
+  border: 1px solid #cdbdaf;
+  border-radius: 22px;
+  background: rgba(255, 250, 245, .55);
+  box-shadow: 0 15px 40px rgba(70, 42, 27, .05);
+}
+
+.schedule-card-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: #6f3e24;
+  color: white;
+}
+
+.schedule-card-title .flags {
+  font-size: 27px;
+  white-space: nowrap;
+}
+
+.schedule-card-title strong {
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+
+.schedule-card-title small {
+  display: block;
+  margin-top: 3px;
+  font-size: 9px;
+  letter-spacing: .28em;
+  opacity: .8;
+}
+
+
+/* ---------- Tables ---------- */
+
+.schedule-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 13px 10px;
+  border-right: 1px solid #d4c7bb;
+  border-bottom: 1px solid #d4c7bb;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.schedule-table th:last-child,
+.schedule-table td:last-child {
+  border-right: 0;
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.schedule-table th {
+  background: rgba(255, 255, 255, .35);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.schedule-table th small {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: .06em;
+}
+
+.schedule-table td:first-child {
+  min-width: 160px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.schedule-table td:not(:first-child) {
+  white-space: nowrap;
+}
+
+.dance-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #6f3e24;
+  color: white;
+  font-size: 13px;
+}
+
+.table-break td {
+  height: 9px;
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+  background: #e8ddd1;
+}
+
+.table-break + tr td {
+  border-top: 1px solid #bba997;
+}
+
+
+/* ---------- Period Headers ---------- */
+
+.schedule-period {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #e8ddd1;
+  border-top: 1px solid #cdbdaf;
+  border-bottom: 1px solid #cdbdaf;
+  color: #6f3e24;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.schedule-period span {
+  font-size: 20px;
+}
+
+
+/* ---------- Bottom Benefits ---------- */
+
+.schedule-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+  border: 1px solid #cdbdaf;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 250, 245, .55);
+}
+
+.schedule-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 23px 20px;
+  border-right: 1px solid #cdbdaf;
+}
+
+.schedule-benefit:last-child {
+  border-right: 0;
+}
+
+.benefit-icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #6f3e24;
+  color: white;
+  font-size: 20px;
+}
+
+.schedule-benefit h4 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: .05em;
+}
+
+.schedule-benefit p {
+  margin: 7px 0 0;
+  font-size: 10px;
+  line-height: 1.6;
+  color: rgba(23, 19, 17, .6);
+}
+
+
+/* ---------- CTA ---------- */
+
+.schedule-cta {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.schedule-cta p {
+  margin-bottom: 14px;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  color: #6f3e24;
+}
+
+.schedule-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 28px;
+  border-radius: 999px;
+  background: #171311;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.schedule-cta a:hover {
+  background: #6f3e24;
+  transform: translateY(-2px);
+}
+
+.schedule-cta a span {
+  font-size: 16px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .schedule-benefit:nth-child(2) {
+    border-right: 0;
+  }
+
+  .schedule-benefit:nth-child(-n + 2) {
+    border-bottom: 1px solid #cdbdaf;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .international-schedule {
+    padding: 75px 12px;
+  }
+
+  .schedule-heading {
+    margin-bottom: 40px;
+  }
+
+  .schedule-eyebrow {
+    font-size: 8px;
+    letter-spacing: .28em;
+  }
+
+  .schedule-heading h2 {
+    font-size: clamp(42px, 15vw, 70px);
+  }
+
+  .weekend-badge {
+    padding: 10px 24px;
+    font-size: 17px;
+  }
+
+  .schedule-values {
+    gap: 8px;
+    font-size: 8px;
+    letter-spacing: .2em;
+  }
+
+  .schedule-quote {
+    font-size: 19px;
+  }
+
+  .schedule-card {
+    border-radius: 15px;
+  }
+
+  .schedule-card-title {
+    padding: 15px;
+  }
+
+  .schedule-card-title .flags {
+    font-size: 21px;
+  }
+
+  .schedule-card-title strong {
+    font-size: 17px;
+  }
+
+  .schedule-card-title small {
+    font-size: 7px;
+    letter-spacing: .15em;
+  }
+
+  /*
+    Horizontal scroll is intentional here.
+    It keeps the schedule readable instead of
+    squeezing 4 columns into a tiny phone screen.
+  */
+  .schedule-table {
+    min-width: 600px;
+    font-size: 10px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 11px 8px;
+  }
+
+  .schedule-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-benefit {
+    border-right: 0;
+    border-bottom: 1px solid #cdbdaf;
+  }
+
+  .schedule-benefit:last-child {
+    border-bottom: 0;
+  }
+
+  .schedule-benefit:nth-child(2) {
+    border-right: 0;
+  }
+
+  .schedule-benefit h4 {
+    font-size: 11px;
+  }
+}
