@@ -256,7 +256,7 @@
 
 
   <!-- INTERNATIONAL SCHEDULE -->
-  <section id="schedule" class="overflow-hidden border-y-[10px] border-[#cdbdaf]/70 bg-[#f4eee7] px-4 py-20 text-[#171311] sm:px-6 lg:px-8 lg:py-28">
+  <section id="schedule" class="overflow-hidden border-y-[10px] border-[#cdbdaf]/70 bg-[#f4eee7] px-4 py-20 text-[#171311] sm:px-6 lg:px-8 lg:py-28 hidden">
 
     <div class="mx-auto max-w-7xl">
 
@@ -744,6 +744,32 @@
 
     </div>
   </section>
+
+  <!-- make a section only with flags where big flags and it should be floating like marquee -->
+
+  <section id="flags" class="bg-[#f4eee7] py-16">
+    
+    <div class="max-w-6xl mx-auto px-4">
+
+      <div class="mt-7 flex items-center justify-center gap-4 pb-4">
+          <span class="h-px w-10 bg-[#171311] sm:w-24"></span>
+          <span class="text-xl font-semibold uppercase tracking-[0.35em] sm:text-3xl text-center">
+            Serving Globally
+          </span>
+          <span class="h-px w-10 bg-[#171311] sm:w-24"></span>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
+        <div class="flex items-center justify-center text-6xl">🇮🇳 <span class="text-sm sm:text-base">India</span></div>
+        <div class="flex items-center justify-center text-6xl">🇺🇸 <span class="text-sm sm:text-base">USA</span></div>
+        <div class="flex items-center justify-center text-6xl">🇬🇧 <span class="text-sm sm:text-base">UK</span></div>
+        <div class="flex items-center justify-center text-6xl">🇫🇷 <span class="text-sm sm:text-base">France</span></div>
+        <div class="flex items-center justify-center text-6xl">🇩🇪 <span class="text-sm sm:text-base">Germany</span></div>
+        <div class="flex items-center justify-center text-6xl">🇲🇾 <span class="text-sm sm:text-base">Malaysia</span></div>
+        <div class="flex items-center justify-center text-6xl">🇸🇬 <span class="text-sm sm:text-base">Singapore</span></div>
+      </div>
+    </div>
+    </section>
 
   <!--  FEE STRUCTURE SECTION -->
   <section id="fees" class="relative overflow-hidden bg-[#e8ddd2] px-4 py-20 text-[#171311] sm:px-6 lg:px-8 lg:py-28">
@@ -1477,7 +1503,7 @@
       kids: 15,
       adult: 18,
       ladies: 18,
-      private: 25
+      private: 26
     },
 
     uk: {
@@ -1485,7 +1511,7 @@
       kids: 12,
       adult: 14,
       ladies: 14,
-      private: 19
+      private: 20
     },
 
     malaysia: {
@@ -1493,7 +1519,7 @@
       kids: 65,
       adult: 75,
       ladies: 75,
-      private: 110
+      private: 106
     },
 
     singapore: {
@@ -1501,7 +1527,7 @@
       kids: 20,
       adult: 25,
       ladies: 25,
-      private: 36
+      private: 34
     },
 
     france: {
@@ -1509,7 +1535,7 @@
       kids: 14,
       adult: 16,
       ladies: 16,
-      private: 22
+      private: 23
     },
 
     germany: {
@@ -1517,7 +1543,7 @@
       kids: 14,
       adult: 16,
       ladies: 16,
-      private: 22
+      private: 23
     }
   };
 
