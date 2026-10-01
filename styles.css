@@ -496,3 +496,75 @@
     font-size: 11px;
   }
 }
+
+/* Flag layout base structure - NOW LARGER */
+.flag-wrapper {
+  display: inline-flex;
+  width: 72px;   /* Increased from 48px */
+  height: 48px;  /* Increased from 34px */
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0); /* Forces GPU optimization */
+  
+  /* Creates actual physical surface waves using clip-path paths */
+  animation: organicWave 2.2s ease-in-out infinite alternate;
+  transform-origin: left center;
+}
+
+/* Base text emoji setup - SCALED UP */
+.emoji-flag {
+  font-size: 64px; /* Increased from 44px so it fills the larger wrapper */
+  line-height: 1;
+  position: absolute;
+  top: -10px;      /* Adjusted alignment for the larger emoji */
+  left: -2px;
+  display: inline-block;
+  white-space: nowrap;
+  
+  /* Simulates wind ripple speeds moving through the fabric */
+  animation: fabricRipple 1.8s ease-in-out infinite alternate;
+}
+
+/* --- RANDOMIZED TIME OFFSETS --- */
+.delay-1 .flag-wrapper, .delay-1 .emoji-flag { animation-delay: -0.4s; animation-duration: 2.1s; }
+.delay-2 .flag-wrapper, .delay-2 .emoji-flag { animation-delay: -0.9s; animation-duration: 2.4s; }
+.delay-3 .flag-wrapper, .delay-3 .emoji-flag { animation-delay: -1.3s; animation-duration: 1.9s; }
+.delay-4 .flag-wrapper, .delay-4 .emoji-flag { animation-delay: -0.2s; animation-duration: 2.3s; }
+.delay-5 .flag-wrapper, .delay-5 .emoji-flag { animation-delay: -0.7s; animation-duration: 2.0s; }
+.delay-6 .flag-wrapper, .delay-6 .emoji-flag { animation-delay: -1.5s; animation-duration: 2.5s; }
+
+
+/* --- THE ANIMATION LOGIC --- */
+
+/* Animates the flag boundaries like moving fluid ripples */
+@keyframes organicWave {
+  0% {
+    clip-path: polygon(0% 15%, 25% 10%, 50% 18%, 75% 12%, 100% 17%, 100% 87%, 75% 82%, 50% 88%, 25% 80%, 0% 85%);
+    transform: rotate(1deg);
+  }
+  50% {
+    clip-path: polygon(0% 15%, 28% 18%, 53% 11%, 72% 17%, 100% 12%, 100% 82%, 72% 87%, 53% 81%, 28% 88%, 0% 85%);
+    transform: rotate(-1deg) translateY(1px);
+  }
+  100% {
+    clip-path: polygon(0% 15%, 22% 13%, 47% 19%, 78% 10%, 100% 15%, 100% 85%, 78% 80%, 47% 89%, 22% 83%, 0% 85%);
+    transform: rotate(2deg) translateY(-1px);
+  }
+}
+
+/* Animates the internal emoji texture & creates dynamic light/shadow folds */
+@keyframes fabricRipple {
+  0% {
+    transform: translateX(0px) skewX(1deg);
+    filter: brightness(1) contrast(1);
+  }
+  50% {
+    transform: translateX(-3px) skewX(-2deg);
+    filter: brightness(0.88) contrast(1.05); 
+  }
+  100% {
+    transform: translateX(-1px) skewX(2deg);
+    filter: brightness(1.08) contrast(0.95); 
+  }
+}
